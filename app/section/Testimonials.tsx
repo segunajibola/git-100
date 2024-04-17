@@ -15,7 +15,7 @@ import { testimonialsData } from "@/lib/data";
 
 export const Testimonials: () => React.JSX.Element = () => {
   return (
-    <Carousel className="w-full text-gray-300 py-4 flex items-center justify-center">
+    <Carousel className="max-w-[70vw] mx-auto text-gray-300 py-24 flex items-center justify-center">
       <CarouselContent>
         {testimonialsData.map((testimonial) => (
           <CarouselItem>
@@ -23,12 +23,11 @@ export const Testimonials: () => React.JSX.Element = () => {
               <div className="mx-auto rounded-full border-4 border-white w-24 h-24">
                 <img
                   alt="Image"
-                  className="rounded-full"
+                  className="rounded-full object-cover object-top"
                   height="96"
                   src={testimonial.image}
                   style={{
                     aspectRatio: "96/96",
-                    objectFit: "cover",
                   }}
                   width="96"
                 />
