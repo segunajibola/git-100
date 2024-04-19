@@ -1,4 +1,4 @@
-import React from "react";
+import React, { JSX } from "react";
 import {
   Menubar,
   MenubarContent,
@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/menubar";
 import Link from "next/link";
 
-export const NavBar = () => {
+export const NavBar: () => JSX.Element = () => {
   return (
     <Menubar className="flex justify-between items-center m-3 bg-gray-900 text-gray-300 border-none">
       <Link className="mr-6" href="#">
@@ -55,8 +55,8 @@ export const NavBard = () => {
         <MountainIcon className="h-6 w-6" />
         <span className="sr-only">Acme Inc</span>
       </Link>
-      <div>
-        <MenubarMenu className="ml-auto flex items-center gap-3 space-x-4">
+      <div className="ml-auto flex items-center gap-3 space-x-4">
+        <MenubarMenu>
           <MenubarContent className="text-gray-300">
             <MenubarItem className="text-gray-300">
               {/* <Link
@@ -67,18 +67,24 @@ export const NavBard = () => {
               {/* </Link> */}
             </MenubarItem>
           </MenubarContent>
+        </MenubarMenu>
+        <MenubarMenu>
           <Link
             className="font-medium text-sm leading-none group-hover:underline"
             href="#"
           >
             Solutions
           </Link>
+        </MenubarMenu>
+        <MenubarMenu>
           <Link
             className="font-medium text-sm leading-none group-hover:underline"
             href="#"
           >
             Pricing
           </Link>
+        </MenubarMenu>
+        <MenubarMenu>
           <Link
             className="font-medium text-sm leading-none group-hover:underline"
             href="#"
@@ -91,7 +97,11 @@ export const NavBard = () => {
   );
 };
 
-function MountainIcon(props) {
+interface MountainIconProps {
+  className?: string;
+}
+
+function MountainIcon(props: MountainIconProps) {
   return (
     <svg
       {...props}
