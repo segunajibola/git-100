@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <section className="w-full pt-8 md:pt-24 lg:pt-32">
-      <div className="container space-y-10 xl:space-y-16">
+      <div className="px-5 space-y-10 xl:space-y-16">
         <div className="grid gap-4 px-2 md:grid-cols-2 md:gap-16">
           <div>
             <h1 className="lg:leading-tighter text-gray-300 text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-[3.4rem] 2xl:text-[3.75rem]">
