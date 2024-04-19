@@ -9,15 +9,16 @@ import {
   MenubarTrigger,
 } from "@/components/ui/menubar";
 import Link from "next/link";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 export const NavBar: () => JSX.Element = () => {
   return (
     <Menubar className="flex justify-between items-center m-3 bg-gray-900 text-gray-300 border-none">
-      <Link className="mr-6" href="#">
+      <Link className="mr-6 flex items-center gap-3" href="#">
         <MountainIcon className="h-6 w-6" />
-        <span className="sr-only">Acme Inc</span>
+        <span className="text-gray-300">Acme Inc</span>
       </Link>
-      <Menubar className="flex items-center justify-between gap-3 bg-gray-900 border-none">
+      <Menubar className="hidden md:flex items-center justify-between gap-3 bg-gray-900 border-none">
         <MenubarMenu>
           <MenubarTrigger className="">File</MenubarTrigger>
           <MenubarContent>
@@ -44,6 +45,7 @@ export const NavBar: () => JSX.Element = () => {
           <MenubarTrigger className="">Get Started</MenubarTrigger>
         </MenubarMenu>
       </Menubar>
+      <RxHamburgerMenu size={30} />
     </Menubar>
   );
 };
@@ -55,7 +57,7 @@ export const NavBard = () => {
         <MountainIcon className="h-6 w-6" />
         <span className="sr-only">Acme Inc</span>
       </Link>
-      <div className="ml-auto flex items-center gap-3 space-x-4">
+      <div className="hidden ml-auto md:flex items-center gap-3 space-x-4">
         <MenubarMenu>
           <MenubarContent className="text-gray-300">
             <MenubarItem className="text-gray-300">
