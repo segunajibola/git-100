@@ -20,7 +20,7 @@ export const NewsLetter: () => React.JSX.Element = () => {
               type="email"
             />
             <Button
-              className="rounded-md bg-gray-200 px-6 py-3 text-gray-900 hover:bg-indigo-700 focus:outline-none"
+              className="rounded-md bg-gray-300 px-6 py-3 text-gray-900 hover:bg-gray-100 hover:text-black focus:outline-none"
               type="submit"
             >
               Subscribe

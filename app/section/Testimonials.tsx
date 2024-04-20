@@ -11,7 +11,7 @@ import { Testimonial } from "@/lib/types"
 
 export const Testimonials: () => React.JSX.Element = () => {
   return (
-    <Carousel className="max-w-[70vw] mx-auto text-gray-300 py-24 flex items-center justify-center">
+    <Carousel className="max-w-[70vw] mx-auto bg-gray-300 text-gray-900 py-24 flex items-center justify-center">
       <CarouselContent>
         {testimonialsData.map((testimonial: Testimonial) => (
           <CarouselItem>
