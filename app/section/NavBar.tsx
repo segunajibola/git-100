@@ -1,4 +1,4 @@
-import React, { JSX } from "react";
+import React from "react";
 import {
   Menubar,
   MenubarContent,
@@ -12,7 +12,7 @@ import Link from "next/link";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoGitMergeSharp } from "react-icons/io5";
 
-export const NavBar: () => JSX.Element = () => {
+export const NavBar: () => React.JSX.Element = () => {
   return (
     <Menubar className="flex justify-between items-center m-3 bg-gray-900 text-gray-300 border-none">
       <Link className="mr-6 flex items-center gap-3" href="#">
