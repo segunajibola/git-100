@@ -1,13 +1,4 @@
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/z1KSmD6dWbz
- * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
- */
-
-import { Hero } from "@/app/section/index";
-import { Features } from "@/app/section/index";
-import { GetStarted } from "@/app/section/index";
-import { Testimonials } from "@/app/section/index";
+import { Hero, Features, GetStarted, Testimonials, NewsLetter, TimeLine } from "@/app/section/index";
 
 export default function Home() {
   return (
@@ -16,6 +7,12 @@ export default function Home() {
       <Features />
       <GetStarted />
       <Testimonials />
+      {/* <div>
+      <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=185lt-wZWweRhCd8kkOFf-EScSovNdn8Jkdo7_ztQP8I&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+      </div> */}
+      <TimeLine />
+      <GetStarted />
+      <NewsLetter />
     </>
   );
 }

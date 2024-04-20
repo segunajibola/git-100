@@ -1,4 +1,6 @@
-export const testimonialsData = [
+import { Testimonial } from "@/lib/types";
+
+export const testimonialsData: Testimonial[] = [
   {
     name: "Sophie Chen",
     image:
