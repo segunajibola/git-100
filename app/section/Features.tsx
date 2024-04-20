@@ -1,9 +1,5 @@
 import React from "react";
-import Link from "next/link";
-import { AiOutlineInteraction } from "react-icons/ai";
-import { MdQuiz, MdOndemandVideo } from "react-icons/md";
-import { GoCommentDiscussion } from "react-icons/go";
-import { GrResources, GrCertificate } from "react-icons/gr";
+import { featureData } from "@/lib/data";
 
 export const Features: () => React.JSX.Element = () => {
   return (
@@ -12,9 +8,6 @@ export const Features: () => React.JSX.Element = () => {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              {/* <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">
-                New Features
-              </div> */}
               <h2 className="text-3xl text-gray-300 font-bold tracking-tighter sm:text-5xl">
                 Code & collaborate with others. Build & Ship fast. 🚀
               </h2>
@@ -25,9 +18,20 @@ export const Features: () => React.JSX.Element = () => {
               </p>
             </div>
           </div>
-          <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-3 lg:gap-12">
+          <div className="mx-auto grid max-w-5xl items-center gap-7 py-12 lg:grid-cols-3 lg:gap-12 text-center">
+            {featureData.map((feature) => (
+              <div key={feature.name} className="grid gap-1">
+                <feature.icon size={60} className="text-white mx-auto" />
+                <h3 className="text-lg font-bold text-gray-300">
+                  {feature.name}
+                </h3>
+                <p className="text-gray-400 dark:text-gray-400">
+                  {feature.paragraph}
+                </p>
+              </div>
+            ))}
             <div className="grid gap-1">
-              <AiOutlineInteraction size={50} className="text-white" />
+              {/* <AiOutlineInteraction size={60} className="text-white mx-auto" /> */}
               <h3 className="text-lg font-bold text-gray-300">
                 Interactive Tutorials
               </h3>
@@ -38,7 +42,7 @@ export const Features: () => React.JSX.Element = () => {
               </p>
             </div>
             <div className="grid gap-1">
-              <MdOndemandVideo size={50} className="text-white" />
+              {/* <MdOndemandVideo size={60} className="text-white" /> */}
               <h3 className="text-lg font-bold text-gray-300">Video Lessons</h3>
               <p className="text-gray-400 dark:text-gray-400">
                 Video lessons presented by experienced instructors, covering
@@ -46,7 +50,7 @@ export const Features: () => React.JSX.Element = () => {
               </p>
             </div>
             <div className="grid gap-1">
-              <MdQuiz size={50} className="text-white" />
+              {/* <MdQuiz size={60} className="text-white" /> */}
               <h3 className="text-lg font-bold text-gray-300">
                 Quizzes and Assessments
               </h3>
@@ -56,7 +60,7 @@ export const Features: () => React.JSX.Element = () => {
               </p>
             </div>
             <div className="grid gap-1">
-              <GrResources size={50} className="text-white" />
+              {/* <GrResources size={60} className="text-white" /> */}
               <h3 className="text-lg font-bold text-gray-300">
                 Documentation and Resources
               </h3>
@@ -67,7 +71,7 @@ export const Features: () => React.JSX.Element = () => {
               </p>
             </div>
             <div className="grid gap-1">
-              <GoCommentDiscussion size={50} className="text-white" />
+              {/* <GoCommentDiscussion size={60} className="text-white" /> */}
               <h3 className="text-lg font-bold text-gray-300">
                 Discussion Forums and Q&A
               </h3>
@@ -77,7 +81,7 @@ export const Features: () => React.JSX.Element = () => {
               </p>
             </div>
             <div className="grid gap-1">
-              <GrCertificate size={50} className="text-white" />
+              {/* <GrCertificate size={60} className="text-white" /> */}
               <h3 className="text-lg font-bold text-gray-300">
                 Certificates of Completion
               </h3>

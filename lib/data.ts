@@ -1,4 +1,8 @@
 import { Testimonial } from "@/lib/types";
+import { AiOutlineInteraction } from "react-icons/ai";
+import { MdQuiz, MdOndemandVideo } from "react-icons/md";
+import { GoCommentDiscussion } from "react-icons/go";
+import { GrResources, GrCertificate } from "react-icons/gr";
 
 export const testimonialsData: Testimonial[] = [
   {
@@ -26,3 +30,11 @@ export const testimonialsData: Testimonial[] = [
       "“Our coding school's success has been greatly attributed to the platform, empowering our students and staff to excel in their careers.”",
   },
 ];
+
+export const featureData = [
+  {
+    icon: AiOutlineInteraction,
+    name: "Interactive Tutorials",
+    paragraph: "Our interactive tutorials guide you through an hands-on exercises, allowing you to practice using Git and GitHub in a real-world context."
+  }
+]
