@@ -1,4 +1,4 @@
-import { Hero, Features, GetStarted, Testimonials, NewsLetter, TimeLine } from "@/app/section/index";
+import { Hero, Features, GetStarted, Testimonials, NewsLetter, TimeLine, Free30DayGit } from "@/app/section/index";
 
 export default function Home() {
   return (
@@ -12,6 +12,7 @@ export default function Home() {
       <TimeLine />
       <Testimonials />
       <GetStarted />
+      <Free30DayGit />
       <NewsLetter />
     </>
   );

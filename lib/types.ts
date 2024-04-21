@@ -4,3 +4,5 @@ export interface Testimonial {
     title: string;
     quote: string;
 }
+
+export type Timeout = ReturnType<typeof setTimeout>;
