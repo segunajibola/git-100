@@ -32,56 +32,6 @@ export const Features: () => React.JSX.Element = () => {
                 </p>
               </div>
             ))}
-            <div className="grid gap-1">
-              {/* <MdOndemandVideo size={60} className="text-white" /> */}
-              <h3 className="text-lg font-bold text-gray-300">Video Lessons</h3>
-              <p className="text-gray-400 dark:text-gray-400">
-                Video lessons presented by experienced instructors, covering
-                different concepts of Git and GitHub in an engaging manner.
-              </p>
-            </div>
-            <div className="grid gap-1">
-              {/* <MdQuiz size={60} className="text-white" /> */}
-              <h3 className="text-lg font-bold text-gray-300">
-                Quizzes and Assessments
-              </h3>
-              <p className="text-gray-400 dark:text-gray-400">
-                Quizzes and assessments at the end of each module to test
-                student's understanding and reinforce learning.
-              </p>
-            </div>
-            <div className="grid gap-1">
-              {/* <GrResources size={60} className="text-white" /> */}
-              <h3 className="text-lg font-bold text-gray-300">
-                Documentation and Resources
-              </h3>
-              <p className="text-gray-400 dark:text-gray-400">
-                Comprehensive documentation and supplementary resources, such as
-                cheat sheets, guides, and reference materials, for you to refer
-                back to.
-              </p>
-            </div>
-            <div className="grid gap-1">
-              {/* <GoCommentDiscussion size={60} className="text-white" /> */}
-              <h3 className="text-lg font-bold text-gray-300">
-                Discussion Forums and Q&A
-              </h3>
-              <p className="text-gray-400 dark:text-gray-400">
-                A place where you can ask questions, share tips, and interact
-                with instructors and peers.
-              </p>
-            </div>
-            <div className="grid gap-1">
-              {/* <GrCertificate size={60} className="text-white" /> */}
-              <h3 className="text-lg font-bold text-gray-300">
-                Certificates of Completion
-              </h3>
-              <p className="text-gray-400 dark:text-gray-400">
-                Get certificates of completion after finishing the training
-                program, which can showcase on your resumes or LinkedIn
-                profiles.
-              </p>
-            </div>
           </div>
         </div>
       </section>

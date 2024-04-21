@@ -35,6 +35,37 @@ export const featureData = [
   {
     icon: AiOutlineInteraction,
     name: "Interactive Tutorials",
-    paragraph: "Our interactive tutorials guide you through an hands-on exercises, allowing you to practice using Git and GitHub in a real-world context."
-  }
-]
+    paragraph:
+      "Our interactive tutorials guide you through an hands-on exercises, allowing you to practice using Git and GitHub in a real-world context.",
+  },
+  {
+    icon: MdOndemandVideo,
+    name: "Video Lessons",
+    paragraph:
+      "Video lessons presented by experienced instructors, covering different concepts of Git and GitHub in an engaging manner.",
+  },
+  {
+    icon: MdQuiz,
+    name: "Quizzes and Assessments",
+    paragraph:
+      "Quizzes and assessments at the end of each module to test student's understanding and reinforce learning.",
+  },
+  {
+    icon: GrResources,
+    name: "Documentation and Resources",
+    paragraph:
+      "Comprehensive documentation and supplementary resources, such as cheat sheets, guides, and reference materials, for you to refer back to.",
+  },
+  {
+    icon: GoCommentDiscussion,
+    name: "Discussion Forums and Q&A",
+    paragraph:
+      "A place where you can ask questions, share tips, and interact with instructors and peers.",
+  },
+  {
+    icon: GrCertificate,
+    name: "Certificates of Completion",
+    paragraph:
+      "Get certificates of completion after finishing the training program, which can showcase on your resumes or LinkedIn profiles.",
+  },
+];
