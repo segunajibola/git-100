@@ -15,7 +15,7 @@ import { IoGitMergeSharp } from "react-icons/io5";
 export const NavBar: () => React.JSX.Element = () => {
   return (
     <Menubar className="flex justify-between items-center m-3 bg-gray-900 text-gray-300 border-none">
-      <Link className="mr-6 flex items-center gap-3" href="#">
+      <Link className="mr-6 flex items-center gap-3" href="/">
         {/* <MountainIcon className="h-6 w-6" /> */}
         <IoGitMergeSharp size={25} />
         <span className="text-gray-300">Git 💯</span>
@@ -35,7 +35,9 @@ export const NavBar: () => React.JSX.Element = () => {
           </MenubarContent>
         </MenubarMenu>
         <MenubarMenu>
-          <MenubarTrigger className="">Features</MenubarTrigger>
+          <MenubarTrigger className="">
+            <Link href="/programs">Programs</Link>
+          </MenubarTrigger>
         </MenubarMenu>
         <MenubarMenu>
           <MenubarTrigger className="">About</MenubarTrigger>
