@@ -78,12 +78,14 @@ export const NavBar: () => React.JSX.Element = () => {
         </SheetTrigger>
         <SheetContent side="right" className="bg-gray-800 text-gray-200">
           <div className="grid gap-2 py-6 bg-gray-800 text-gray-200">
-            <Link
-              className="flex w-full items-center py-2 text-lg font-semibold"
-              href="/"
-            >
-              <SheetClose asChild>Home</SheetClose>
-            </Link>
+            <SheetClose asChild>
+              <Link
+                className="flex w-full items-center py-2 text-lg font-semibold"
+                href="/"
+              >
+                Home
+              </Link>
+            </SheetClose>
             <Collapsible className="grid gap-4">
               <CollapsibleTrigger className="flex w-full items-center text-lg font-semibold [&[data-state=open]>svg]:rotate-90">
                 Programs
@@ -133,24 +135,31 @@ export const NavBar: () => React.JSX.Element = () => {
                 </div>
               </CollapsibleContent>
             </Collapsible>
-            <Link
-              className="flex w-full items-center py-2 text-lg font-semibold"
-              href="/pricing"
-            >
-              Pricing
-            </Link>
-            <Link
-              className="flex w-full items-center py-2 text-lg font-semibold"
-              href="/about"
-            >
-              <SheetClose asChild>About</SheetClose>
-            </Link>
-            <Link
-              className="flex w-full items-center py-2 text-lg font-semibold"
-              href="/contact"
-            >
-              <SheetClose asChild>Contact</SheetClose>
-            </Link>
+            <SheetClose asChild>
+              <Link
+                className="flex w-full items-center py-2 text-lg font-semibold"
+                href="/pricing"
+              >
+                Pricing
+              </Link>
+            </SheetClose>
+
+            <SheetClose asChild>
+              <Link
+                className="flex w-full items-center py-2 text-lg font-semibold"
+                href="/about"
+              >
+                About
+              </Link>
+            </SheetClose>
+            <SheetClose asChild>
+              <Link
+                className="flex w-full items-center py-2 text-lg font-semibold"
+                href="/contact"
+              >
+                Contact
+              </Link>
+            </SheetClose>
           </div>
         </SheetContent>
       </Sheet>
