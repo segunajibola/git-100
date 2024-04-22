@@ -8,7 +8,7 @@ const Programs: React.FC = () => {
         Programs
       </h1>
       <section className="w-full flex flex-col gap-y-[12rem] py-12 md:py-24 lg:py-32">
-      <div className="container px-4 md:px-6">
+        <div className="container px-4 md:px-6">
           <div className="grid items-center gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_550px]">
             <img
               alt="3-Months Program for Engineering teams"
@@ -20,15 +20,16 @@ const Programs: React.FC = () => {
             <div className="space-y-4 md:order-last">
               <div className="space-y-2">
                 <h2 className="text-3xl text-gray-300 font-bold tracking-tighter sm:text-5xl">
-                Free 30-Day Git and GitHub Training
+                  Free 30-Day Git and GitHub Training
                 </h2>
                 <p className="max-w-[600px] text-gray-300 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-900">
-                Join our exclusive WhatsApp group and learn Git and GitHub from the experts. The training starts on June 1st, 2024.
+                  Join our exclusive WhatsApp group and learn Git and GitHub
+                  from the experts. The training starts on June 1st, 2024.
                 </p>
               </div>
               <Link
                 className="inline-flex h-10 items-center justify-center rounded-md bg-gray-300 px-8 font-medium text-gray-900 shadow transition-colors hover:bg-black hover:border hover:border-white hover:text-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-300 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
-                href="#"
+                href="/programs/free-30day-git"
               >
                 Enroll
               </Link>
@@ -59,7 +60,7 @@ const Programs: React.FC = () => {
               </div>
               <Link
                 className="inline-flex h-10 items-center justify-center rounded-md bg-gray-100 px-8 font-medium text-gray-900 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-300 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
-                href="#"
+                href="/programs/coding-schools"
               >
                 Enroll
               </Link>
@@ -90,7 +91,7 @@ const Programs: React.FC = () => {
               </div>
               <Link
                 className="inline-flex h-10 items-center justify-center rounded-md bg-gray-100 px-8 font-medium text-gray-900 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-300 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
-                href="#"
+                href="/programs/engineering-teams"
               >
                 Enroll
               </Link>

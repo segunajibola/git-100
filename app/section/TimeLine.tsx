@@ -17,7 +17,7 @@ export const TimeLine: () => React.JSX.Element = () => {
               environment and mastering coding principles and practices.
             </p>
             <div className="flex justify-center items-center my-5">
-              <Button className="bg-gray-300 text-gray-900">Download PDF</Button>
+              <Button className="bg-gray-300 text-gray-900 hover:bg-white">Download PDF</Button>
             </div>
           </div>
           <div className="flex-1 pr-4">
@@ -32,7 +32,7 @@ export const TimeLine: () => React.JSX.Element = () => {
               work.
             </p>
             <div className="flex justify-center items-center my-5">
-              <Button className="bg-gray-300 text-gray-900">Download PDF</Button>
+              <Button className="bg-gray-300 text-gray-900 hover:bg-white">Download PDF</Button>
             </div>
           </div>
         </div>

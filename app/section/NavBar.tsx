@@ -9,7 +9,12 @@ import {
   MenubarTrigger,
 } from "@/components/ui/menubar";
 import { Button } from "@/components/ui/button";
-import { SheetTrigger, SheetContent, Sheet } from "@/components/ui/sheet";
+import {
+  SheetTrigger,
+  SheetContent,
+  Sheet,
+  SheetClose,
+} from "@/components/ui/sheet";
 import {
   CollapsibleTrigger,
   CollapsibleContent,
@@ -77,7 +82,7 @@ export const NavBar: () => React.JSX.Element = () => {
               className="flex w-full items-center py-2 text-lg font-semibold"
               href="/"
             >
-              Home
+              <SheetClose asChild>Home</SheetClose>
             </Link>
             <Collapsible className="grid gap-4">
               <CollapsibleTrigger className="flex w-full items-center text-lg font-semibold [&[data-state=open]>svg]:rotate-90">
@@ -86,39 +91,45 @@ export const NavBar: () => React.JSX.Element = () => {
               </CollapsibleTrigger>
               <CollapsibleContent>
                 <div className="-mx-6 grid gap-6 p-6 bg-gray-700">
-                  <Link
-                    className="group grid h-auto w-full justify-start gap-1"
-                    href="#"
-                  >
-                    <div className="text-sm font-medium leading-none group-hover:underline">
-                    Free 30-Day Git and GitHub Training
-                    </div>
-                    <div className="line-clamp-2 text-sm leading-snug text-gray-400 dark:text-gray-400">
-                      Learn Git and GitHub on WhatsApp for free
-                    </div>
-                  </Link>
-                  <Link
-                    className="group grid h-auto w-full justify-start gap-1"
-                    href="#"
-                  >
-                    <div className="text-sm font-medium leading-none group-hover:underline">
-                    100-Day Plan for Coding Schools Students
-                    </div>
-                    <div className="line-clamp-2 text-sm leading-snug text-gray-400 dark:text-gray-400">
-                      Upskill your student collaborative skills
-                    </div>
-                  </Link>
-                  <Link
-                    className="group grid h-auto w-full justify-start gap-1"
-                    href="#"
-                  >
-                    <div className="text-sm font-medium leading-none group-hover:underline">
-                    3-Months Program for Engineering teams
-                    </div>
-                    <div className="line-clamp-2 text-sm leading-snug text-gray-400 dark:text-gray-400">
-                      Let your teams build features like the team they are
-                    </div>
-                  </Link>
+                  <SheetClose asChild>
+                    <Link
+                      className="group grid h-auto w-full justify-start gap-1"
+                      href="/programs/free-30day-git"
+                    >
+                      <div className="text-sm font-medium leading-none group-hover:underline">
+                        Free 30-Day Git and GitHub Training
+                      </div>
+                      <div className="line-clamp-2 text-sm leading-snug text-gray-400 dark:text-gray-400">
+                        Learn Git and GitHub on WhatsApp for free
+                      </div>
+                    </Link>
+                  </SheetClose>
+                  <SheetClose asChild>
+                    <Link
+                      className="group grid h-auto w-full justify-start gap-1"
+                      href="/programs/coding-schools"
+                    >
+                      <div className="text-sm font-medium leading-none group-hover:underline">
+                        100-Day Plan for Coding Schools Students
+                      </div>
+                      <div className="line-clamp-2 text-sm leading-snug text-gray-400 dark:text-gray-400">
+                        Upskill your student collaborative skills
+                      </div>
+                    </Link>
+                  </SheetClose>
+                  <SheetClose asChild>
+                    <Link
+                      className="group grid h-auto w-full justify-start gap-1"
+                      href="/programs/engineering-teams"
+                    >
+                      <div className="text-sm font-medium leading-none group-hover:underline">
+                        3-Months Program for Engineering teams
+                      </div>
+                      <div className="line-clamp-2 text-sm leading-snug text-gray-400 dark:text-gray-400">
+                        Let your teams build features like the team they are
+                      </div>
+                    </Link>
+                  </SheetClose>
                 </div>
               </CollapsibleContent>
             </Collapsible>
@@ -132,13 +143,13 @@ export const NavBar: () => React.JSX.Element = () => {
               className="flex w-full items-center py-2 text-lg font-semibold"
               href="/about"
             >
-              About
+              <SheetClose asChild>About</SheetClose>
             </Link>
             <Link
               className="flex w-full items-center py-2 text-lg font-semibold"
               href="/contact"
             >
-              Contact
+              <SheetClose asChild>Contact</SheetClose>
             </Link>
           </div>
         </SheetContent>
@@ -147,7 +158,7 @@ export const NavBar: () => React.JSX.Element = () => {
   );
 };
 
-function ChevronRightIcon(props: {className: string}) {
+function ChevronRightIcon(props: { className: string }) {
   return (
     <svg
       {...props}
@@ -163,5 +174,5 @@ function ChevronRightIcon(props: {className: string}) {
     >
       <path d="m9 18 6-6-6-6" />
     </svg>
-  )
+  );
 }
