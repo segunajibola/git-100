@@ -57,6 +57,11 @@ export const NavBar: () => React.JSX.Element = () => {
             </MenubarTrigger>
           </MenubarMenu>
           <MenubarMenu>
+            <MenubarTrigger className="">
+              <Link href="/pricing">Pricing</Link>
+            </MenubarTrigger>
+          </MenubarMenu>
+          <MenubarMenu>
             <MenubarTrigger className="bg-red-400 text-white">
               <Link href="/programs">Get Started</Link>
             </MenubarTrigger>

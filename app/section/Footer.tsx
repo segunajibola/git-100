@@ -8,10 +8,16 @@ export const Footer: () => React.JSX.Element = () => {
         © {new Date().getFullYear()} Git 💯. All rights reserved.
       </p>
       <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-        <Link className="hover:underline underline-offset-4" href="#">
+        <Link
+          className="hover:text-blue-300 underline-offset-4"
+          href="/terms-of-service"
+        >
           Terms of Service
         </Link>
-        <Link className="hover:underline underline-offset-4" href="#">
+        <Link
+          className="hover:text-blue-300 underline-offset-4"
+          href="/privacy"
+        >
           Privacy
         </Link>
       </nav>
