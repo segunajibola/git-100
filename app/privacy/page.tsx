@@ -8,7 +8,7 @@ export default function Component() {
           Privacy Policy
         </h1>
         <p className="text-lg">
-          At our Git, GitHub, and engineering development collaboration site, we
+          At our Git, GitHub, and engineering collaboration trainings, we
           are committed to protecting the privacy and security of our users.
           This privacy policy outlines how we collect, use, and safeguard your
           personal information.
