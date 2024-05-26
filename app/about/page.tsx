@@ -11,7 +11,7 @@ const page: React.FC = () => {
         <div className="container px-4 md:px-6 flex flex-col md:flex-row items-center justify-between gap-10">
           <div className="space-y-4 text-center md:text-left">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
-              About Our Software Company
+              About Us
             </h1>
             <p className="max-w-md text-gray-600 dark:text-gray-400 text-lg">
               Discover our mission, values, and the talented team behind our
