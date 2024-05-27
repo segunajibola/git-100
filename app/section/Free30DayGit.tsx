@@ -46,7 +46,7 @@ export const Free30DayGit = () => {
 
   return (
     <div className="flex flex-col items-center justify-center h-[70vh] bg-gray-900 dark:bg-gray-100">
-      <div className="max-w-md w-full bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
+      <div className="max-w-md w-full bg-white dark:bg-gray-800 sm:rounded-lg shadow-lg p-8">
         <div className="text-center">
           <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4">
             Free 30-Day Git and GitHub Training
