@@ -11,7 +11,7 @@ export default function Component() {
               Unlock Your Collaboration Potential
             </h1>
             <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              Elevate your team's productivity with our comprehensive Git,
+              Elevate you and your team's productivity with our comprehensive Git,
               GitHub, and engineering collaboration platform.
             </p>
             <Link
