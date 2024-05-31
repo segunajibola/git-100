@@ -1,6 +1,10 @@
 import React from "react";
 import Link from "next/link";
 
+// <button className="absolute top-2 right-2 bg-blue-500 text-white py-1 px-3 rounded">
+// Click Me
+// </button>
+
 const Programs: React.FC = () => {
   return (
     <>
@@ -10,13 +14,18 @@ const Programs: React.FC = () => {
       <section className="w-full flex flex-col gap-y-[12rem] py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
           <div className="grid items-center gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_550px]">
-            <img
-              alt="3-Months Program for Engineering teams"
-              className="overflow-hidden rounded-t-xl md:rounded-xl object-cover object-center sm:w-full lg:order-last md:h-[50vh]"
-              height="310"
-              src="https://images.unsplash.com/photo-1630514969818-94aefc42ec47?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              width="550"
-            />
+            <div className="relative">
+              <img
+                alt="3-Months Program for Engineering teams"
+                className="overflow-hidden rounded-t-xl md:rounded-xl object-cover object-center sm:w-full lg:order-last md:h-[50vh]"
+                height="310"
+                src="https://images.unsplash.com/photo-1630514969818-94aefc42ec47?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                width="550"
+              />
+              <button className="absolute top-2 right-2 bg-gray-600 text-white py-1 px-3 rounded">
+                Free
+              </button>
+            </div>
             <div className="space-y-4 md:order-last">
               <div className="space-y-2">
                 <h2 className="text-3xl text-gray-300 font-bold tracking-tighter sm:text-5xl">
@@ -38,13 +47,18 @@ const Programs: React.FC = () => {
         </div>
         <div className="container px-4 md:px-6">
           <div className="grid items-center gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_550px]">
-            <img
-              alt="100-Day Plan for Coding Schools Students"
-              className="overflow-hidden rounded-t-xl md:rounded-xl object-cover object-center sm:w-full lg:order-last md:h-[50vh]"
-              height="310"
-              src="https://images.unsplash.com/photo-1652305500057-0fcb348b62aa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              width="550"
-            />
+            <div className="relative">
+              <img
+                alt="100-Day Plan for Coding Schools Students"
+                className="overflow-hidden rounded-t-xl md:rounded-xl object-cover object-center sm:w-full lg:order-last md:h-[50vh]"
+                height="310"
+                src="https://images.unsplash.com/photo-1652305500057-0fcb348b62aa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                width="550"
+              />
+              <button className="absolute top-2 right-2 bg-gray-600 text-white py-1 px-3 rounded">
+                Premium
+              </button>
+            </div>
             <div className="space-y-4">
               <div className="space-y-2">
                 <h2 className="text-3xl text-gray-300 font-bold tracking-tighter sm:text-5xl">
@@ -59,7 +73,7 @@ const Programs: React.FC = () => {
                 </p>
               </div>
               <Link
-                className="inline-flex h-10 items-center justify-center rounded-md bg-gray-100 px-8 font-medium text-gray-900 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-300 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+                className="inline-flex h-10 items-center justify-center rounded-md bg-gray-100 px-8 font-medium text-gray-900 shadow transition-colors hover:bg-gray-700 hover:text-gray-200 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-300 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
                 href="/programs/coding-schools"
               >
                 Enroll
@@ -69,13 +83,18 @@ const Programs: React.FC = () => {
         </div>
         <div className="container px-4 md:px-6">
           <div className="grid items-center gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_550px]">
-            <img
-              alt="3-Months Program for Engineering teams"
-              className="overflow-hidden rounded-t-xl md:rounded-xl object-cover object-center sm:w-full lg:order-last md:h-[50vh]"
-              height="310"
-              src="https://images.unsplash.com/photo-1573164574511-73c773193279?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              width="550"
-            />
+            <div className="relative">
+              <img
+                alt="3-Months Program for Engineering teams"
+                className="overflow-hidden rounded-t-xl md:rounded-xl object-cover object-center sm:w-full lg:order-last md:h-[50vh]"
+                height="310"
+                src="https://images.unsplash.com/photo-1573164574511-73c773193279?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                width="550"
+              />
+              <button className="absolute top-2 right-2 bg-gray-600 text-white py-1 px-3 rounded">
+                Premium
+              </button>
+            </div>
             <div className="space-y-4 md:order-last">
               <div className="space-y-2">
                 <h2 className="text-3xl text-gray-300 font-bold tracking-tighter sm:text-5xl">
@@ -90,7 +109,7 @@ const Programs: React.FC = () => {
                 </p>
               </div>
               <Link
-                className="inline-flex h-10 items-center justify-center rounded-md bg-gray-100 px-8 font-medium text-gray-900 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-300 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+                className="inline-flex h-10 items-center justify-center rounded-md bg-gray-100 px-8 font-medium text-gray-900 shadow transition-colors hover:bg-gray-700 hover:text-gray-200 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-300 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
                 href="/programs/engineering-teams"
               >
                 Enroll

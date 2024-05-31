@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const Footer: () => React.JSX.Element = () => {
   return (
-    <footer className="flex flex-col text-gray-500 my-2 dark:text-gray-400 gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
+    <footer className="flex flex-col text-gray-400 my-2 dark:text-gray-400 gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
       <p className="">
         © {new Date().getFullYear()} Git 💯. All rights reserved.
       </p>

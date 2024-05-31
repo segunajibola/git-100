@@ -52,14 +52,16 @@ export const NewsLetter: () => React.JSX.Element = () => {
               Subscribe
             </Button>
           </form>
-          {status === "loading" && <p>Loading...</p>}
-          {status === "success" && (
-            <p>
-              Thank you for subscribing, please check your mail to confirm
-              newsletter.
-            </p>
-          )}
-          {status === "error" && <p>There was an error. Please try again.</p>}
+          <div className="my-2 h-2">
+            {status === "loading" && <p>Loading...</p>}
+            {status === "success" && (
+              <p>
+                Thank you for subscribing, please check your mail to confirm
+                newsletter.
+              </p>
+            )}
+            {status === "error" && <p>There was an error. Please try again.</p>}
+          </div>
         </div>
       </div>
     </section>

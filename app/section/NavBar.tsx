@@ -33,7 +33,7 @@ export const NavBar: () => React.JSX.Element = () => {
           <span className="text-gray-300">Git 💯</span>
         </Link>
         <Menubar className="hidden md:flex items-center justify-between gap-3 bg-gray-900 border-none">
-          <MenubarMenu>
+          {/* <MenubarMenu>
             <MenubarTrigger className="">File</MenubarTrigger>
             <MenubarContent>
               <MenubarItem>
@@ -45,12 +45,7 @@ export const NavBar: () => React.JSX.Element = () => {
               <MenubarSeparator />
               <MenubarItem>Print</MenubarItem>
             </MenubarContent>
-          </MenubarMenu>
-          <MenubarMenu>
-            <MenubarTrigger className="">
-              <Link href="/programs">Programs</Link>
-            </MenubarTrigger>
-          </MenubarMenu>
+          </MenubarMenu> */}
           <MenubarMenu>
             <MenubarTrigger className="">
               <Link href="/about">About</Link>
@@ -62,7 +57,7 @@ export const NavBar: () => React.JSX.Element = () => {
             </MenubarTrigger>
           </MenubarMenu>
           <MenubarMenu>
-            <MenubarTrigger className="">
+            <MenubarTrigger className="bg-red-400 text-white">
               <Link href="/programs">Get Started</Link>
             </MenubarTrigger>
           </MenubarMenu>
